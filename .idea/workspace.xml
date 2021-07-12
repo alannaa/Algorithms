@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b18246f0-2c32-4915-8d01-b3d0da02c1aa" name="Default Changelist" comment="" />
+    <list default="true" id="b18246f0-2c32-4915-8d01-b3d0da02c1aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Midterm/Problem3Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Midterm/Problem3notes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Midterm/Problem3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem3.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,13 +20,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Midterm/Problem2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+            <state relative-caret-position="234">
+              <caret line="138" column="23" lean-forward="true" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#Subarray#0;class#Problem2#0" />
                 <element signature="method#compareTo#0;class#Subarray#0;class#Problem2#0" />
-                <element signature="method#exchangeij#0;class#Problem2#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3notes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1923#1924#0" expanded="true" />
+                <element signature="e#1951#1952#0" expanded="true" />
+                <element signature="method#getLeftChildIdx#0;class#Problem3#0" />
+                <element signature="e#2065#2066#0" expanded="true" />
+                <element signature="e#2097#2098#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -29,45 +55,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Quiz1/QuickSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2573">
-              <caret line="311" column="31" selection-start-line="311" selection-start-column="31" selection-end-line="311" selection-end-column="31" />
+            <state relative-caret-position="455">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#Stopwatch#0;class#QuickSort#0" />
-                <element signature="class#StdRandom#0;class#QuickSort#0" />
-                <element signature="method#exchangeij#0;class#QuickSort#0" />
+                <element signature="method#deleteMin#0;class#Problem3#0" />
+                <element signature="method#doubleSize#0;class#Problem3#0" />
+                <element signature="method#downSize#0;class#Problem3#0" />
+                <element signature="method#swimUp#0;class#Problem3#0" />
+                <element signature="e#3642#3714#0" />
+                <element signature="e#4448#4449#0" expanded="true" />
+                <element signature="e#4478#4479#0" expanded="true" />
+                <element signature="e#4521#4522#0" expanded="true" />
+                <element signature="e#4551#4552#0" expanded="true" />
+                <element signature="method#exchange#0;class#Problem3TakeTwo#0" />
+                <element signature="method#printHeap#0;class#Problem3#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StdRandom.java">
+        <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="483" column="35" selection-start-line="483" selection-start-column="28" selection-end-line="483" selection-end-column="35" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#3492#3493#0" expanded="true" />
-                <element signature="e#3513#3514#0" expanded="true" />
-                <element signature="e#3675#3676#0" expanded="true" />
-                <element signature="e#3711#3712#0" expanded="true" />
-                <element signature="e#5400#5401#0" expanded="true" />
-                <element signature="e#5426#5427#0" expanded="true" />
-                <element signature="e#7255#7256#0" expanded="true" />
-                <element signature="e#7286#7287#0" expanded="true" />
-                <element signature="e#10316#10317#0" expanded="true" />
-                <element signature="e#10344#10345#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="122">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -91,6 +102,9 @@
       <replace>System.out</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -106,15 +120,19 @@
         <option value="$PROJECT_DIR$/src/Midterm/Problem1.java" />
         <option value="$PROJECT_DIR$/src/Quiz1/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem2.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem3TakeTwo.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem3notes.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem3Tests.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem3.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-324" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1493" />
-    <option name="height" value="1054" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="639" />
+    <option name="height" value="736" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -132,6 +150,12 @@
               <item name="Algo Learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algo Learning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algo Learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algo Learning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algo Learning" type="b2602c69:ProjectViewProjectNode" />
@@ -157,7 +181,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625883810721" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1626133760463" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -175,35 +199,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Problem2">
-    <configuration name="MergeSortBotUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Quiz1.MergeSortBotUp" />
-      <module name="Algo Learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Quiz1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeSortTopDown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Quiz1.MergeSortTopDown" />
-      <module name="Algo Learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Quiz1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Midterm.Problem1" />
+  <component name="RunManager" selected="Application.Problem3Tests">
+    <configuration name="Problem2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Midterm.Problem2" />
       <module name="Algo Learning" />
       <extension name="coverage">
         <pattern>
@@ -215,8 +213,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Midterm.Problem2" />
+    <configuration name="Problem3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Midterm.Problem3" />
+      <module name="Algo Learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Midterm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem3Tests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Midterm.Problem3Tests" />
+      <module name="Algo Learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Midterm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem3notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Midterm.Problem3notes" />
       <module name="Algo Learning" />
       <extension name="coverage">
         <pattern>
@@ -243,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Problem3Tests" />
+        <item itemvalue="Application.Problem3TakeTwo" />
+        <item itemvalue="Application.Problem3notes" />
         <item itemvalue="Application.Problem2" />
         <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.Problem1" />
-        <item itemvalue="Application.MergeSortBotUp" />
-        <item itemvalue="Application.MergeSortTopDown" />
       </list>
     </recent_temporary>
   </component>
@@ -265,10 +289,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-324" y="-1057" width="1493" height="1054" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="736" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1847002" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21647818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -276,16 +300,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12058212" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35854924" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.04658385" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35714287" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32919255" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.045738045" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3478261" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -304,16 +328,6 @@
         <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chapter1/ThreeSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="46" selection-start-line="46" selection-end-line="65" selection-end-column="3" />
-          <folding>
-            <element signature="class#Stopwatch#0;class#ThreeSum#0" />
           </folding>
         </state>
       </provider>
@@ -422,23 +436,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chapter1/ThreeSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3notes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1923#1924#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="method#getLeftChildIdx#0;class#Problem3#0" />
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2097#2098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Midterm/Problem2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+        <state relative-caret-position="234">
+          <caret line="138" column="23" lean-forward="true" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#Subarray#0;class#Problem2#0" />
             <element signature="method#compareTo#0;class#Subarray#0;class#Problem2#0" />
-            <element signature="method#exchangeij#0;class#Problem2#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="455">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="method#deleteMin#0;class#Problem3#0" />
+            <element signature="method#doubleSize#0;class#Problem3#0" />
+            <element signature="method#downSize#0;class#Problem3#0" />
+            <element signature="method#swimUp#0;class#Problem3#0" />
+            <element signature="e#3642#3714#0" />
+            <element signature="e#4448#4449#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4551#4552#0" expanded="true" />
+            <element signature="method#exchange#0;class#Problem3TakeTwo#0" />
+            <element signature="method#printHeap#0;class#Problem3#0" />
+          </folding>
         </state>
       </provider>
     </entry>
