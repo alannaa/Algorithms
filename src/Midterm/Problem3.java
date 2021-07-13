@@ -14,211 +14,466 @@ public class Problem3 {
   Hint: Use two heaps.
    */
 
-  public int memSpace = 1;
+  public int memSpace = 1; //the total amount of memory currently allocated
+  public int heapSize = 0;
   public Comparable[] maxHeap = new Comparable[memSpace];
   public Comparable[] minHeap = new Comparable[memSpace];
-  public int heapSize = 0;
-  public int minValIdx;
+  public int minIndexInMaxHeap = 0;//min value's index on max heap
+  public int maxIndexInMinHeap = 0;//max value's index on min heap
 
 
-  //Logarithmic Time LogN
-  public void insert(Comparable item){
-    if(heapSize == memSpace) {
+  //Occurs in Logarithmic Time
+  // Swimming up worst case is LogN+1 compares and swaps.
+  // That is because the depth of the heap is LogN and when you perform
+  // swimming up the element swimming will be compared/swapped with its
+  // parent at most the number of layers there are (because we compare with
+  // the layer above, not with any neighbors left or right).
+  // LogN depth is guaranteed because we are storing the data structure as an
+  // array and then using indices to determine the layers of the heap.
+  // thus, the tree stays "balanced" and in heap formation if you print (as I do
+  // in printHeap method) the array out with a new line at every index that
+  // is a power of 2.
+  public void insert(Comparable item) {
+    if (heapSize == memSpace) {
       doubleSize();
     }
-
-    // Insert at leaf, then update heap stats accordingly
-    maxHeap[heapSize] = item;
-    minHeap[heapSize] = item;
-    heapSize++;
-
-//    // If inserting the first item
-//    if (heapSize == 0){
-//      minValIdx = 0;
-//      heapSize++;
-//      return;
-//    }
-
-    swimUp(heapSize);
+    // Insert item at both heaps' leaf indexes; increase heapSize; swim up
+    // (will handle swimming up both heap directions, min heap and max heap)
+    addToBothHeaps(heapSize, item);
+    swimUp(heapSize - 1);
+  }
 
 
-    //check if the new item has a value that is less than the cur min value
-    // -If yes: update the minValIdx, increase heap size, keep item at leaf
-    if(item.compareTo(maxHeap[minValIdx]) < 0){
-      minValIdx = heapSize;
-      heapSize++;
-    } else {
-      //-If no: swim up (worst logn+1)
-      swimUp(heapSize);
-      heapSize++;
+
+  //Occures in Logarithmic Time (worst case 3logN)
+  // note that the heapSize is subtracted before the work of deleting Max.
+
+  // Deleting max from the max heap costs 2logN due to having to compare and
+  // possibly swap with two children at each depth level (depth == log n).
+
+  // Deleting max from the min heap costs logN.
+  // Method: Arbitrarily replace the previous max element with the final
+  // element of the array. Then, swim up that element in its new place.
+  // Swimming up costs LogN because LogN is largest possible number of times
+  // you would have to compare an element to its parent to swim it into place.
+
+  //Finally, add logN with 2logN to get the final time complexity of 3logN
+  // (and drop the constant for generally logarithmic time)
+  public void deleteMax(){
+    if(heapSize==0){
+      return;
+    }
+
+    heapSize--;
+    deleteMaxFromMaxHeap();
+    deleteMaxFromMinHeap();
+
+    if(heapSize <= memSpace/2){
+      downSize();
     }
   }
 
-  //Logarithmic Time 2logN
-  public Comparable deleteMax(){
+  private void deleteMaxFromMaxHeap(){
     //exchange the last element in the array with the root
-    exchange(0, heapSize-1);
+    exchange(maxHeap, "MAX", 0, heapSize);
+    maxHeap[heapSize] = null; //null out the deleted item
+    swimDownMaxHeap(0);//swim the new root down into place
+  }
 
-    //delete the last element in the array
-    Comparable removeItem = maxHeap[heapSize-1];
+  private void deleteMaxFromMinHeap(){
+    //ONLY SEARCH THROUGH LEAVES for the new Max value, it is guaranteed
+    // to be there, so you can reduce your search space by half at the start
+    int leafLevel = (heapSize/2)-1>0 ? (heapSize/2)-1 : 0;
+
+    if(maxIndexInMinHeap == heapSize) {
+      minHeap[maxIndexInMinHeap] = null;
+      for(int i = leafLevel; i<heapSize; i++) {
+        if (minHeap[i]==findMax()) {
+          maxIndexInMinHeap = i;
+        }
+      }
+
+    } else {
+      int initMax = maxIndexInMinHeap;
+      //Exchange the max value with the last array element
+      exchange(minHeap, "MIN", maxIndexInMinHeap, heapSize);
+      minHeap[heapSize] = null; //null out deleted item
+
+      for(int i = leafLevel; i<heapSize; i++) {
+        if (minHeap[i]==findMax()) {
+          maxIndexInMinHeap = i;
+        }
+      }
+      //swim new root of sub heap (starting from where the prev max was) into
+      // place. The reason we swim up and not down is because remember the
+      // max value of a min heap is guaranteed to be in the leaves. So there
+      // is no need to swim down. But it is possible that the exchange caused
+      // a small value to be placed under a larger value, which needs to be
+      // adjusted.
+      swimUpMinHeap(initMax); //worse case logN
+    }
+  }
+
+
+
+  //Occures in Logarithmic Time (worst case 2logN)
+  // Explanation is the exact same as deleteMax but with the order of logic
+  // reversed
+  public void deleteMin(){
+    if(heapSize==0){
+      return;
+    }
+
     heapSize--;
-    scanLeavesForMin(heapSize);
+    deleteMinFromMinHeap();
+    deleteMinFromMaxHeap();
 
-    //swim the new root down into place
-    swimDown(0);
     if(heapSize <= memSpace/2){
       downSize();
     }
-    return removeItem;
   }
 
-  //Logarithmic Time
-  public Comparable deleteMin(){
-    //In a max heap, the min will always be a leaf, so just delete it
-    Comparable removeItem = maxHeap[minValIdx];
-    heapSize--;
-
-    scanLeavesForMin(minValIdx);
-
-    if(heapSize <= memSpace/2){
-      downSize();
-    }
-    return removeItem;
+  private void deleteMinFromMinHeap(){
+    //exchange the last element in the array with the root
+    exchange(minHeap, "MIN", 0, heapSize);
+    minHeap[heapSize] = null; //null out the deleted item
+    swimDownMinHeap(0);//swim the new root down into place
   }
 
-  private void scanLeavesForMin(int initMinIdx){
-    maxHeap[initMinIdx] = null;
-    //set an arbitrary new minValidIdx, the leftmost leaf on the leaf level
-    int leafLevel = (memSpace/2)-1;
-    minValIdx = leafLevel;
+  private void deleteMinFromMaxHeap(){
+    //ONLY SEARCH THROUGH LEAVES for the new Min value, it is guaranteed
+    // to be there, so you can reduce your search space by half at the start
+    int leafLevel = (heapSize/2)-1>0 ? (heapSize/2)-1 : 0;
 
-    //search through the leaves for the new min val (at MOST n/2 cycles)
-    for (int i=leafLevel+1; i<heapSize; i++){
-      if (i>=initMinIdx){
-        //copy over elements that came after the deleted value to avoid a gap
-        maxHeap[i] = maxHeap[i+1];
+    if(minIndexInMaxHeap == heapSize) {
+      maxHeap[minIndexInMaxHeap] = null;
+      for(int i = leafLevel; i<heapSize; i++) {
+        if (maxHeap[i]==findMin()) {
+          minIndexInMaxHeap = i;
+        }
       }
-      if (maxHeap[i].compareTo(maxHeap[minValIdx]) < 0) {
-        minValIdx = i;
+
+    } else {
+      int initMin = minIndexInMaxHeap;
+      //Exchange the max value with the last array element
+      exchange(maxHeap, "MAX", minIndexInMaxHeap, heapSize);
+      maxHeap[heapSize] = null; //null out deleted item
+
+      for(int i = leafLevel; i<heapSize; i++) {
+        if (maxHeap[i]==findMin()) {
+          minIndexInMaxHeap = i;
+        }
       }
+      //swim new root of sub heap (starting from where the prev min was) into
+      // place. The reason we swim up and not down is because remember the
+      // min value of a max heap is guaranteed to be in the leaves. So there
+      // is no need to swim down. But it is possible that the exchange caused
+      // a larger value to be placed under a smaller value, which needs to be
+      // adjusted.
+      swimUpMaxHeap(initMin); //worse case logN
     }
-
-
   }
 
-  //Complete: Constant time
-  public Comparable findMax(){
+
+
+
+
+  //Occurs in Constant time thanks to the use of both heap directions
+  // max will always lie at the 0th index of the properly formatted maxHeap
+  public Comparable findMax() {
     return maxHeap[0];
   }
 
-  //Complete: Constant time
-  public Comparable findMin(){
-    return maxHeap[minValIdx];
+  //Occurs in Constant time thanks to the use of both heap directions
+  // min will always lie at the 0th index of the properly formatted minHeap
+  public Comparable findMin() {
+    return minHeap[0];
   }
 
-  private void doubleSize(){
-    memSpace *=2;
-    Comparable[] reSized = new Comparable[memSpace];
-    for (int i=0; i < heapSize; i++){
-      reSized[i] = maxHeap[i];
-    }
-    maxHeap = reSized;
-    //Old maxHeap will be garbage collected
+
+
+
+
+  //----Swim Helpers----//
+  private void addToBothHeaps(int index, Comparable item){
+    maxHeap[index] = item;
+    minHeap[index] = item;
+    heapSize++;
   }
 
-  private void downSize(){
-    if (memSpace<=1){
-      return;
-    }
-    memSpace /=2;
-    Comparable[] reSized = new Comparable[memSpace];
-    for (int i=0; i < heapSize; i++){
-      reSized[i] = maxHeap[i];
-    }
-    maxHeap = reSized;
-    //Old maxHeap will be garbage collected
+  private void swimUp(int startingIdx) {
+    swimUpMaxHeap(startingIdx);
+    swimUpMinHeap(startingIdx);
   }
 
-  private void swimUp(int startingIdx){
+  private void swimUpMaxHeap(int startingIdx) {
     int parentIdx = getParentIdx(startingIdx);
-    if(parentIdx<0){
+    //base case/stopping case: if we've reached the root
+    if (parentIdx < 0) {
       return;
     }
     //if the value at the starting index is greater than its parent...
-    if(maxHeap[startingIdx].compareTo(maxHeap[parentIdx]) > 0){
-      exchange(startingIdx, parentIdx);
-
-      if(parentIdx==minValIdx){
-        minValIdx = startingIdx;
+    if (maxHeap[startingIdx].compareTo(maxHeap[parentIdx]) > 0) {
+      exchange(maxHeap, "MAX", startingIdx, parentIdx);
+      swimUpMaxHeap(parentIdx);
+    } else {
+      if (maxHeap[startingIdx].compareTo(maxHeap[minIndexInMaxHeap]) < 0){
+        minIndexInMaxHeap = startingIdx;
       }
-      swimUp(parentIdx);
     }
-    //otherwise, stop the recursion here
   }
 
-  private void swimDown(int startingIdx){
-    //test to make sure LC and RC are in bounds
-    int LC = getLeftChildIdx(startingIdx);
-    int RC = getRightChildIdx(startingIdx);
-
-    int greaterChildIdx = -1;
-
-    if(LC < heapSize) {
-      greaterChildIdx=LC;
-    }
-
-    if(RC < heapSize) {
-      greaterChildIdx=RC;
-    }
-
-    if(greaterChildIdx==-1 || (
-        maxHeap[LC].compareTo(maxHeap[startingIdx]) < 0 &&
-        maxHeap[RC].compareTo(maxHeap[startingIdx]) < 0)) {
+  private void swimUpMinHeap(int startingIdx) {
+    int parentIdx = getParentIdx(startingIdx);
+    //base case/stopping case: if we've reached the root
+    if (parentIdx < 0) {
       return;
+    }
+    //if the value at the starting index is less than its parent...
+    if (minHeap[startingIdx].compareTo(minHeap[parentIdx]) < 0) {
+      exchange(minHeap, "MIN", startingIdx, parentIdx);
+      swimUpMinHeap(parentIdx);
+    }else {
+      if (minHeap[startingIdx].compareTo(minHeap[maxIndexInMinHeap]) > 0){
+        maxIndexInMinHeap = startingIdx;
+      }
+    }
+  }
+
+  private void swimDownMaxHeap(int startingIdx) {
+    int LC = getLeftChildIdx(startingIdx);  //-1 if index out of bounds
+    int RC = getRightChildIdx(startingIdx); //-1 if index out of bounds
+
+    //if both children are valid and in bounds
+    if (LC >= 0 && RC >= 0) {
+      //If both children are smaller than this current element, all is in place
+      if (maxHeap[LC].compareTo(maxHeap[startingIdx]) < 0 &&
+          maxHeap[RC].compareTo(maxHeap[startingIdx]) < 0) {
+        return;
+      } else {
+        int largerChildIdx = (maxHeap[LC].compareTo(maxHeap[RC]) > 0) ? LC : RC;
+        exchange(maxHeap, "MAX", startingIdx, largerChildIdx);
+        swimDownMaxHeap(largerChildIdx);
+      }
     } else {
-      //at this point we know at least one child is fair game to exchange with
-      if(greaterChildIdx==RC && LC<heapSize) {
-        if (maxHeap[LC].compareTo(maxHeap[greaterChildIdx]) > 0) {
-          greaterChildIdx = LC;
+      //if the function gets here, then either only one child is valid
+      //or neither child is valid (in which case the work is done)
+      if (LC >= 0) {
+        if (maxHeap[LC].compareTo(maxHeap[startingIdx]) > 0) {
+          exchange(maxHeap, "MAX", startingIdx, LC);
+          swimDownMaxHeap(LC);
         }
       }
-      exchange(startingIdx, greaterChildIdx);
-      swimDown(greaterChildIdx);
+      if (RC >= 0) {
+        if (maxHeap[RC].compareTo(maxHeap[startingIdx]) > 0) {
+          exchange(maxHeap, "MAX", startingIdx, RC);
+          swimDownMaxHeap(RC);
+        }
+      }
     }
   }
 
-  public int getParentIdx(int index){
-    if(index==0){
+  private void swimDownMinHeap(int startingIdx) {
+    int LC = getLeftChildIdx(startingIdx);  //-1 if index out of bounds
+    int RC = getRightChildIdx(startingIdx); //-1 if index out of bounds
+
+    //if both children are valid and in bounds
+    if (LC >= 0 && RC >= 0) {
+      //If both children are greater than this current element, all is in place
+      if (minHeap[LC].compareTo(minHeap[startingIdx]) > 0 &&
+          minHeap[RC].compareTo(minHeap[startingIdx]) > 0) {
+        return;
+      } else {
+        int smallerChildIdx = (minHeap[LC].compareTo(minHeap[RC]) < 0) ? LC :
+            RC;
+        exchange(minHeap, "MIN", startingIdx, smallerChildIdx);
+        swimDownMinHeap(smallerChildIdx);
+      }
+    } else {
+      //if the function gets here, then either only one child is valid
+      //or neither child is valid (in which case the work is done)
+      if (LC >= 0) {
+        if (minHeap[LC].compareTo(minHeap[startingIdx]) < 0) {
+          exchange(minHeap, "MIN", startingIdx, LC);
+          swimDownMinHeap(LC);
+        }
+      }
+      if (RC >= 0) {
+        if (minHeap[RC].compareTo(minHeap[startingIdx]) < 0) {
+          exchange(minHeap, "MIN", startingIdx, RC);
+          swimDownMinHeap(RC);
+        }
+      }
+    }
+  }
+
+
+
+
+
+  //----Getters----//
+  int getParentIdx(int index) {
+    if (index == 0) {
       return -1;
     }
-    return ((index+1)/2)-1;
+    return ((index + 1) / 2) - 1;
   }
 
-  public int getLeftChildIdx(int index){
-    return 2*(index+1)-1;
+  int getLeftChildIdx(int index) {
+    int idx = 2 * (index + 1) - 1;
+    if (idx < heapSize) {
+      return idx;
+    } else {
+      return -1;
+    }
   }
 
-  public int getRightChildIdx(int index){
-    return (2*(index+1));
+  int getRightChildIdx(int index) {
+    int idx = (2 * (index + 1));
+    ;
+    if (idx < heapSize) {
+      return idx;
+    } else {
+      return -1;
+    }
   }
 
-  private void exchange(int i, int j){
-    Comparable temp = maxHeap[i];
-    maxHeap[i] = maxHeap[j];
-    maxHeap[j] = temp;
+
+
+
+
+  //----Utility/For Testing Purposes----//
+  private void exchange(Comparable[] heap, String dir, int i, int j) {
+    Comparable temp = heap[i];
+    heap[i] = heap[j];
+    heap[j] = temp;
+    if (dir.equals("MAX")) {
+      if (minIndexInMaxHeap == i) {
+        minIndexInMaxHeap = j;
+        return;
+      }
+      if (minIndexInMaxHeap == j) {
+        minIndexInMaxHeap = i;
+        return;
+      }
+    }
+    if (dir.equals("MIN")) {
+      if (maxIndexInMinHeap == i) {
+        maxIndexInMinHeap = j;
+        return;
+      }
+      if (maxIndexInMinHeap == j) {
+        maxIndexInMinHeap = i;
+      }
+    }
   }
 
-  public void printHeap(){
+  private void doubleSize() {
+    memSpace *= 2;
+
+    Comparable[] reSized = new Comparable[memSpace];
+    for (int i = 0; i < heapSize; i++) {
+      reSized[i] = maxHeap[i];
+    }
+    maxHeap = reSized;
+
+    reSized = new Comparable[memSpace];
+    for (int i = 0; i < heapSize; i++) {
+      reSized[i] = minHeap[i];
+    }
+    minHeap = reSized;
+  }
+
+  private void downSize() {
+    if (memSpace <= 1) {
+      return;
+    }
+    memSpace /= 2;
+    Comparable[] reSized = new Comparable[memSpace];
+    for (int i = 0; i < heapSize; i++) {
+      reSized[i] = maxHeap[i];
+    }
+    maxHeap = reSized;
+
+    reSized = new Comparable[memSpace];
+    for (int i = 0; i < heapSize; i++) {
+      reSized[i] = minHeap[i];
+    }
+    minHeap = reSized;
+  }
+
+  void resetHeap(){
+    memSpace = 1;
+    heapSize = 0;
+    Comparable[] maxHeap = new Comparable[memSpace];
+    Comparable[] minHeap = new Comparable[memSpace];
+    minIndexInMaxHeap = 0;
+    maxIndexInMinHeap = 0;
+  }
+
+  boolean isProperHeap(){
+    for(int i=0; i<heapSize; i++){
+      int LC = getLeftChildIdx(i);
+      int RC = getRightChildIdx(i);
+
+      if(LC>=0) {
+        if (maxHeap[i].compareTo(maxHeap[LC]) < 0){
+          System.out.println("------FAILED: Not a Properly Formatted Max Heap"
+              + "\nFailed on index: " + i
+              + "\nFailed on child: " + LC + "\n");
+          this.printHeap();
+        }
+      } else if (RC >=0) {
+        if (maxHeap[i].compareTo(maxHeap[RC]) < 0){
+          System.out.println("------FAILED: Not a Properly Formatted Max Heap"
+              + "\nFailed on index: " + i
+              + "\nFailed on child: " + RC + "\n");
+          this.printHeap();
+        }
+      }
+    }
+    for(int i=0; i<heapSize; i++){
+      int LC = getLeftChildIdx(i);
+      int RC = getRightChildIdx(i);
+
+      if(LC>=0) {
+        if (minHeap[i].compareTo(minHeap[LC]) > 0){
+          System.out.println("------FAILED: Not a Properly Formatted Min Heap"
+              + "\nFailed on index: " + i
+              + "\nFailed on child: " + LC + "\n");
+          this.printHeap();
+        }
+      } else if (RC >=0) {
+        if (minHeap[i].compareTo(minHeap[RC]) > 0){
+          System.out.println("------FAILED: Not a Properly Formatted Min Heap"
+              + "\nFailed on index: " + i
+              + "\nFailed on child: " + RC + "\n");
+          this.printHeap();
+        }
+      }
+    }
+    return true;
+  }
+
+  void printHeap() {
     System.out.println("memory space: " + memSpace);
     System.out.println("heap size: " + heapSize);
-    System.out.println("min idx: " + minValIdx);
-    for(int i=0; i<heapSize; i++){
-      if (i!=0 && (i+1 & (i)) == 0) {
+    System.out.println("min idx in max heap: " + minIndexInMaxHeap);
+    System.out.println("max idx in min heap: " + maxIndexInMinHeap);
+    for (int i = 0; i < heapSize; i++) {
+      if (i != 0 && (i + 1 & (i)) == 0) {
         System.out.print("\n");
       }
       System.out.print(maxHeap[i] + " ");
     }
     System.out.print("\n\n");
+    for (int i = 0; i < heapSize; i++) {
+      if (i != 0 && (i + 1 & (i)) == 0) {
+        System.out.print("\n");
+      }
+      System.out.print(minHeap[i] + " ");
+    }
+    System.out.print("\n---------------\n\n");
   }
 
 }
