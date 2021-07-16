@@ -73,6 +73,10 @@ public class Problem3Tests {
       System.out.println("FindMax actual: " + orderedQueue.findMax());
     }
 
+    if (System.out.equals("")) {
+      System.out.println("ALL PASSED");
+    }
+
 
   }
 

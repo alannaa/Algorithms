@@ -182,7 +182,7 @@ public class Problem2 {
     int n = 1000;
 
     /*To run tests:
-    Run file to see output with complexity stats.
+    Run the file and review output stats to observe how the quicksort performs.
      */
 
     //------Base Case: Empty Array------//
@@ -215,16 +215,16 @@ public class Problem2 {
 
 
     //----Create an array with duplicated values----//
-    if (n%2!=0) {
-      n-=1;
-    }
-    Comparable[] duplicatesArray = new Comparable[n];
-    for (int i=0; i<n/2; i++){
-      int dup = new Random().nextInt(100);
-      duplicatesArray[i] = dup;
-      duplicatesArray[n/2+i] = dup;
-    }
-    problem2.printTestResults(duplicatesArray, "---All Duplicates Array---");
+//    if (n%2!=0) {
+//      n-=1;
+//    }
+//    Comparable[] duplicatesArray = new Comparable[n];
+//    for (int i=0; i<n/2; i++){
+//      int dup = new Random().nextInt(100);
+//      duplicatesArray[i] = dup;
+//      duplicatesArray[n/2+i] = dup;
+//    }
+//    problem2.printTestResults(duplicatesArray, "---All Duplicates Array---");
 
 
     //----Create an array that's already sorted(worst case)----//

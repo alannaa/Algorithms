@@ -200,12 +200,8 @@ public class Problem3 {
     maxHeap[index] = item;
     minHeap[index] = item;
     heapSize++;
-    swimUp(heapSize - 1);
-  }
-
-  private void swimUp(int startingIdx) {
-    swimUpMaxHeap(startingIdx);
-    swimUpMinHeap(startingIdx);
+    swimUpMaxHeap(heapSize - 1);
+    swimUpMinHeap(heapSize - 1);
   }
 
   private void swimUpMaxHeap(int startingIdx) {
