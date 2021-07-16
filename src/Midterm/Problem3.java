@@ -14,6 +14,8 @@ public class Problem3 {
   Hint: Use two heaps.
    */
 
+  //TODO the memspace field makes the time complexity slow down but improves
+  // space complexity (similarly to how ArrayList works)
   public int memSpace = 1; //the total amount of memory currently allocated
   public int heapSize = 0;
   public Comparable[] maxHeap = new Comparable[memSpace];
@@ -40,7 +42,6 @@ public class Problem3 {
     // Insert item at both heaps' leaf indexes; increase heapSize; swim up
     // (will handle swimming up both heap directions, min heap and max heap)
     addToBothHeaps(heapSize, item);
-    swimUp(heapSize - 1);
   }
 
 
@@ -199,6 +200,7 @@ public class Problem3 {
     maxHeap[index] = item;
     minHeap[index] = item;
     heapSize++;
+    swimUp(heapSize - 1);
   }
 
   private void swimUp(int startingIdx) {

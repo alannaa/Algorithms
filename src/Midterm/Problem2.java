@@ -37,7 +37,7 @@ public class Problem2 {
   // the original input array.
 
 
-  // Subarray is a class for handling ranges of subarrays of a greater array
+  // Subarray is a class for handling ranges of subarrays
   public class Subarray {
     final int low;
     final int high;
@@ -63,13 +63,23 @@ public class Problem2 {
 
   /*
     Time Complexity:
-    --Recursive
-    --the while loop that checks if the stack size>0 runs MORE THAN log N times
-    --this is because
+    --We know the recursive version of quicksort runs in average case n log
+    n, due to there being n compares at logn levels of recursion (on average).
+    In the recursive quicksort, the base case (to stop the recursion) is
+    checking if the array passed into the parameters is of length 1, in which
+    case the recursion may stop. I tried to recreate this base case/halting
+    functionality in my while loop below, however the work to determine when
+    we've reached a base case as well as the work to determine which subarray
+    is larger (and therefore needs to be pushed to the stack first) adds a
+    lot of compares and extra time to each iteration of sort.
+
+    Space Complexity:
+    --While the non-recursive version of quicksort below utilizes extra
+    objects like the built-in Java stack, the recursive version is actually
+    much worse in terms of space complexity because of the memory required to
+    perform all of the recursive function calls that could potentially go
+    into stackoverflow if sorting a super long array.
    */
-  //TODO Time complexity
-  //TODO space complexity
-  // TODO comments about why putting the bigger array first makes the size <logn
   public void nonRecursiveQuickSort(Comparable[] arr){
 
     // workStack is a stack of Subarrays to be worked on
@@ -84,6 +94,10 @@ public class Problem2 {
 
       //pop one element
       Subarray currSubarray = workStack.pop();
+      if (currSubarray.length() == 1) {
+        continue;//move onto the next item so as not to waste time and cycles
+        // going through partition of a single-element array
+      }
 
       //partition it
       int pIdx = partition(arr, currSubarray.low, currSubarray.high);
@@ -103,6 +117,21 @@ public class Problem2 {
         if (right.isValidSubarray())  workStack.push(right);
         if (left.isValidSubarray()) workStack.push(left);
       }
+      //The purpose of placing the larger subarray into the stack first is so
+      // that the workstack does not get cluttered with single-element
+      // subarrays. If we put the shorter subarray in first, then in the case
+      // where the array being split is of length 3 and the resulting
+      // subarrays are of length 1 and 2, if we put length-1 first then
+      // length-2 will be split into two single-element arrays resulting in
+      // the workstack now being cluttered with THREE consecutive
+      // single-element arrays. On the other hand, if we always ensure the
+      // longer one goes onto the stack first, when there is an array of
+      // length 3 that is split into two subarrays of length-1 and length-1,
+      // if the length-2 subarray goes in first (thus the length-1 array is
+      // HANDLED first) then the workstack will get rid of the single-element
+      // array before splitting up the second length-2 array, and thus the
+      // SIZE of the workstack will never get built up out of single-element
+      // arrays.
     }
   }
 
@@ -153,8 +182,7 @@ public class Problem2 {
     int n = 1000;
 
     /*To run tests:
-    Run file and compare the unordered arrays to the ordered arrays in the
-    output.
+    Run file to see output with complexity stats.
      */
 
     //------Base Case: Empty Array------//
@@ -212,6 +240,8 @@ public class Problem2 {
     nonRecursiveQuickSort(arrayToSort);
     System.out.println(title);
     System.out.println("N: " + arrayToSort.length);
+    double logN = (Math.log(arrayToSort.length) / Math.log(2));
+    System.out.println("LogN: " + logN);
     System.out.println("Main loop ran: " + mainLoopRunCount + " times");
     System.out.println("Partition loop ran: " + partitionLoopRunCount
         + " times");

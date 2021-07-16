@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b18246f0-2c32-4915-8d01-b3d0da02c1aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Midterm/Problem4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Midterm/Problem5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3notes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Midterm/Problem2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Midterm/Problem3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Midterm/Problem3Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem3Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Midterm/Problem3notes.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,33 +25,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+            <state relative-caret-position="274">
+              <caret line="214" column="13" lean-forward="true" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
               <folding>
-                <element signature="e#533#792#0" />
                 <element signature="method#deleteMax#0;class#Problem3#0" />
                 <element signature="method#deleteMaxFromMaxHeap#0;class#Problem3#0" />
                 <element signature="method#deleteMaxFromMinHeap#0;class#Problem3#0" />
                 <element signature="method#deleteMin#0;class#Problem3#0" />
                 <element signature="method#deleteMinFromMinHeap#0;class#Problem3#0" />
-                <element signature="method#deleteMaxFromMaxHeap#1;class#Problem3#0" />
-                <element signature="n#!!block;n#findMax#0;n#Problem3#0" />
-                <element signature="e#6353#6354#0" expanded="true" />
-                <element signature="n#!!block;n#findMin#0;n#Problem3#0" />
-                <element signature="e#6559#6560#0" expanded="true" />
-                <element signature="e#3000#3158#0" />
-                <element signature="method#swimUp#0;class#Problem3#0" />
-                <element signature="e#2403#2906#0" />
-                <element signature="e#2910#3336#0" />
-                <element signature="e#3346#4966#0" />
-                <element signature="e#4546#5747#0" />
-                <element signature="e#5951#6085#0" />
-                <element signature="e#5456#5581#0" />
-                <element signature="e#5604#5676#0" />
-                <element signature="e#6405#6991#0" />
-                <element signature="e#6995#7342#0" />
+                <element signature="method#deleteMinFromMaxHeap#0;class#Problem3#0" />
+                <element signature="e#6316#6317#0" expanded="true" />
+                <element signature="e#6343#6344#0" expanded="true" />
+                <element signature="e#6522#6523#0" expanded="true" />
+                <element signature="e#6549#6550#0" expanded="true" />
+                <element signature="method#swimUpMinHeap#0;class#Problem3#0" />
+                <element signature="method#swimDownMaxHeap#0;class#Problem3#0" />
+                <element signature="method#swimDownMinHeap#0;class#Problem3#0" />
+                <element signature="method#getParentIdx#0;class#Problem3#0" />
+                <element signature="method#getLeftChildIdx#0;class#Problem3#0" />
+                <element signature="method#getRightChildIdx#0;class#Problem3#0" />
+                <element signature="method#exchange#0;class#Problem3#0" />
+                <element signature="method#doubleSize#0;class#Problem3#0" />
                 <element signature="method#downSize#0;class#Problem3#0" />
-                <element signature="e#8247#8648#0" />
+                <element signature="method#resetHeap#0;class#Problem3#0" />
                 <element signature="method#isProperHeap#0;class#Problem3#0" />
                 <element signature="method#printHeap#0;class#Problem3#0" />
               </folding>
@@ -87,19 +91,20 @@
         <option value="$PROJECT_DIR$/src/Quiz1/MergeSortBotUp.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem1.java" />
         <option value="$PROJECT_DIR$/src/Quiz1/QuickSort.java" />
-        <option value="$PROJECT_DIR$/src/Midterm/Problem2.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem3TakeTwo.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem3notes.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem3Tests.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem2.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem4.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem5.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem3.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-324" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="y" value="23" />
+    <option name="width" value="1233" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -108,6 +113,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,25 +130,12 @@
               <item name="Algo Learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algo Learning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algo Learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algo Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Midterm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algo Learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algo Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Quiz1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -150,7 +143,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1626209262116" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1626451489725" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -168,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Problem3Tests">
+  <component name="RunManager" selected="Application.Problem2">
     <configuration name="Problem2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Midterm.Problem2" />
       <module name="Algo Learning" />
@@ -236,10 +229,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Problem3Tests" />
-        <item itemvalue="Application.Problem3TakeTwo" />
-        <item itemvalue="Application.Problem3notes" />
         <item itemvalue="Application.Problem2" />
+        <item itemvalue="Application.Problem3Tests" />
+        <item itemvalue="Application.Problem3notes" />
         <item itemvalue="Application.QuickSort" />
       </list>
     </recent_temporary>
@@ -258,9 +250,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-324" y="-1057" width="1920" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1233" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21618743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1813602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -269,7 +262,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1326425" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.090202175" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5279503" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,19 +327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="23" selection-end-column="3" />
-          <folding>
-            <element signature="method#strategyLogN#0;class#Problem1#0" />
-            <element signature="method#binarySearch#0;class#Problem1#0" />
-            <element signature="method#strategy2LogF#0;class#Problem1#0" />
-            <element signature="method#buildBuilding#0;class#Problem1#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Quiz1/QuickSortG4G.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-640">
@@ -384,19 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Quiz1/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2573">
-          <caret line="311" column="31" selection-start-line="311" selection-start-column="31" selection-end-line="311" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#Stopwatch#0;class#QuickSort#0" />
-            <element signature="class#StdRandom#0;class#QuickSort#0" />
-            <element signature="method#exchangeij#0;class#QuickSort#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chapter1/ThreeSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -411,9 +378,10 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3notes.java" />
     <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
+        <state relative-caret-position="160">
           <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
           <folding>
             <element signature="method#runHelperTests#0;class#Problem3Tests#0" />
@@ -421,66 +389,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3notes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="method#getLeftChildIdx#0;class#Problem3#0" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2097#2098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Midterm/Problem2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1527">
-          <caret line="138" column="23" lean-forward="true" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+        <state relative-caret-position="415">
+          <caret line="73" column="62" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#Subarray#0;class#Problem2#0" />
             <element signature="method#compareTo#0;class#Subarray#0;class#Problem2#0" />
+            <element signature="method#exchange#0;class#Problem2#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Quiz1/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2468">
+          <caret line="311" column="31" selection-start-line="311" selection-start-column="31" selection-end-line="311" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Stopwatch#0;class#QuickSort#0" />
+            <element signature="class#StdRandom#0;class#QuickSort#0" />
+            <element signature="method#exchangeij#0;class#QuickSort#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="184" column="4" lean-forward="true" selection-start-line="184" selection-start-column="4" selection-end-line="184" selection-end-column="46" />
+          <folding>
+            <element signature="method#strategyLogN#0;class#Problem1#0" />
+            <element signature="method#binarySearch#0;class#Problem1#0" />
+            <element signature="method#strategy2LogF#0;class#Problem1#0" />
+            <element signature="method#buildBuilding#0;class#Problem1#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
+        <state relative-caret-position="274">
+          <caret line="214" column="13" lean-forward="true" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
           <folding>
-            <element signature="e#533#792#0" />
             <element signature="method#deleteMax#0;class#Problem3#0" />
             <element signature="method#deleteMaxFromMaxHeap#0;class#Problem3#0" />
             <element signature="method#deleteMaxFromMinHeap#0;class#Problem3#0" />
             <element signature="method#deleteMin#0;class#Problem3#0" />
             <element signature="method#deleteMinFromMinHeap#0;class#Problem3#0" />
-            <element signature="method#deleteMaxFromMaxHeap#1;class#Problem3#0" />
-            <element signature="n#!!block;n#findMax#0;n#Problem3#0" />
-            <element signature="e#6353#6354#0" expanded="true" />
-            <element signature="n#!!block;n#findMin#0;n#Problem3#0" />
-            <element signature="e#6559#6560#0" expanded="true" />
-            <element signature="e#3000#3158#0" />
-            <element signature="method#swimUp#0;class#Problem3#0" />
-            <element signature="e#2403#2906#0" />
-            <element signature="e#2910#3336#0" />
-            <element signature="e#3346#4966#0" />
-            <element signature="e#4546#5747#0" />
-            <element signature="e#5951#6085#0" />
-            <element signature="e#5456#5581#0" />
-            <element signature="e#5604#5676#0" />
-            <element signature="e#6405#6991#0" />
-            <element signature="e#6995#7342#0" />
+            <element signature="method#deleteMinFromMaxHeap#0;class#Problem3#0" />
+            <element signature="e#6316#6317#0" expanded="true" />
+            <element signature="e#6343#6344#0" expanded="true" />
+            <element signature="e#6522#6523#0" expanded="true" />
+            <element signature="e#6549#6550#0" expanded="true" />
+            <element signature="method#swimUpMinHeap#0;class#Problem3#0" />
+            <element signature="method#swimDownMaxHeap#0;class#Problem3#0" />
+            <element signature="method#swimDownMinHeap#0;class#Problem3#0" />
+            <element signature="method#getParentIdx#0;class#Problem3#0" />
+            <element signature="method#getLeftChildIdx#0;class#Problem3#0" />
+            <element signature="method#getRightChildIdx#0;class#Problem3#0" />
+            <element signature="method#exchange#0;class#Problem3#0" />
+            <element signature="method#doubleSize#0;class#Problem3#0" />
             <element signature="method#downSize#0;class#Problem3#0" />
-            <element signature="e#8247#8648#0" />
+            <element signature="method#resetHeap#0;class#Problem3#0" />
             <element signature="method#isProperHeap#0;class#Problem3#0" />
             <element signature="method#printHeap#0;class#Problem3#0" />
           </folding>
