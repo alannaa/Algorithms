@@ -17,29 +17,29 @@ public class Problem5 {
 
   * Initial Table
   IDX   [0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15]
-  KEYS  [P  M        A  C  S  H  L     E               R   X ]
+  KEYS  [P  M        A  C  S  H  L     E               size   X ]
   VALS  [10 9        8  4  0  5  11    12              3   7 ]
 
   * Step 1 delete C
   IDX   [0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15]
-  KEYS  [P  M        A  NU S  H  L     E               R   X ]
+  KEYS  [P  M        A  NU S  H  L     E               size   X ]
   VALS  [10 9        8  NU 0  5  11    12              3   7 ]
 
   * Step 2 redo i=6 (S) which belongs at index 6 (no change)
   IDX   [0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15]
-  KEYS  [P  M        A  NU S  H  L     E               R   X ]
+  KEYS  [P  M        A  NU S  H  L     E               size   X ]
   VALS  [10 9        8  NU 0  5  11    12              3   7 ]
 
   * Step 3 redo i=7 (H) which belongs at index 4, but its occupied by A
   * so it gets pushed into index 5
   IDX   [0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15]
-  KEYS  [P  M        A  H  S  NU L     E               R   X ]
+  KEYS  [P  M        A  H  S  NU L     E               size   X ]
   VALS  [10 9        8  5  0  NU 11    12              3   7 ]
 
   * Step 4 redo i=8 (L) which belongs at index 6, but its occupied by H
   * so it gets the next best option which is index 7
   IDX   [0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15]
-  KEYS  [P  M        A  S  H  L  NU    E               R   X ]
+  KEYS  [P  M        A  S  H  L  NU    E               size   X ]
   VALS  [10 9        8  0  5  11 NU    12              3   7 ]
 
   * Step 5 is that keys[9] is NULL so the while loop will stop moving things

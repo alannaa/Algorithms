@@ -14,6 +14,7 @@ public class Problem3 {
   Hint: Use two heaps.
    */
 
+
   //TODO the memspace field makes the time complexity slow down but improves
   // space complexity (similarly to how ArrayList works)
   public int memSpace = 1; //the total amount of memory currently allocated

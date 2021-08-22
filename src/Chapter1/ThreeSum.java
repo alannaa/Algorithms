@@ -93,7 +93,7 @@ public class ThreeSum {
     Stopwatch timer = new Stopwatch();
     int count = count(arr);
     System.out.println("elapsed time: " + timer.elapsedTime());
-    System.out.println("\ncount: " + count);
+    System.out.println("\ngetNumComponents: " + count);
   }
 
 }

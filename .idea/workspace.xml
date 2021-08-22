@@ -2,13 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b18246f0-2c32-4915-8d01-b3d0da02c1aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Final/Alphabet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/AlphabetAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/Bag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/ConnectedComponents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/EdgeWeightedDigraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/EdgeWeightedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/IndexMinPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/Problem1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/Problem2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/Problem3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/Problem4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/Trie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Final/UnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OAGoogle/Google1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OAGoogle/Google2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OAGoogle/GooglePractice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OAGoogle/GooglePractice2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OANordstrom/NordstromTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Quiz3/Problem1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Quiz3/Problem2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Quiz3/Problem3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Chapter1/ThreeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Chapter1/ThreeSum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem3Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Midterm/Problem2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algo Learning/Midterm/Problem5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter1/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/ThreeSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Midterm/Problem3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Midterm/Problem3Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem3Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Midterm/Problem4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Midterm/Problem5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Midterm/Problem5.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,68 +46,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Midterm/Problem2.java">
+        <entry file="file://$PROJECT_DIR$/src/Final/Problem4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2538">
-              <caret line="216" column="54" lean-forward="true" selection-start-line="216" selection-start-column="54" selection-end-line="216" selection-end-column="54" />
+            <state relative-caret-position="385">
+              <caret line="301" column="14" selection-start-line="301" selection-start-column="10" selection-end-line="301" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Final/Trie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-736">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="20" />
+              <folding>
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Final/Alphabet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#Subarray#0;class#Problem2#0" />
-                <element signature="method#compareTo#0;class#Subarray#0;class#Problem2#0" />
-                <element signature="method#exchange#0;class#Problem2#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-              <folding>
-                <element signature="method#deleteMaxFromMinHeap#0;class#Problem3#0" />
-                <element signature="method#deleteMinFromMaxHeap#0;class#Problem3#0" />
-                <element signature="e#6316#6317#0" expanded="true" />
-                <element signature="e#6343#6344#0" expanded="true" />
-                <element signature="e#6522#6523#0" expanded="true" />
-                <element signature="e#6549#6550#0" expanded="true" />
-                <element signature="method#swimUpMinHeap#0;class#Problem3#0" />
-                <element signature="method#swimDownMaxHeap#0;class#Problem3#0" />
-                <element signature="method#swimDownMinHeap#0;class#Problem3#0" />
-                <element signature="method#getParentIdx#0;class#Problem3#0" />
-                <element signature="method#getLeftChildIdx#0;class#Problem3#0" />
-                <element signature="method#getRightChildIdx#0;class#Problem3#0" />
-                <element signature="method#exchange#0;class#Problem3#0" />
-                <element signature="method#doubleSize#0;class#Problem3#0" />
-                <element signature="method#downSize#0;class#Problem3#0" />
-                <element signature="method#resetHeap#0;class#Problem3#0" />
-                <element signature="method#isProperHeap#0;class#Problem3#0" />
-                <element signature="method#printHeap#0;class#Problem3#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Midterm/Problem5.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Midterm/Problem1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
-              <folding>
-                <element signature="method#strategyLogN#0;class#Problem1#0" />
-                <element signature="method#binarySearch#0;class#Problem1#0" />
-                <element signature="method#strategy2LogF#0;class#Problem1#0" />
-                <element signature="method#buildBuilding#0;class#Problem1#0" />
               </folding>
             </state>
           </provider>
@@ -94,6 +85,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -102,6 +94,15 @@
     <findStrings>
       <find>StdOut</find>
       <find>shuffle</find>
+      <find>compareTo</find>
+      <find>public class</find>
+      <find>class</find>
+      <find>get</find>
+      <find>toStrin</find>
+      <find>print</find>
+      <find>iterable</find>
+      <find>contains</find>
+      <find>toIndex</find>
     </findStrings>
     <replaceStrings>
       <replace>System.out</replace>
@@ -115,7 +116,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/Chapter1/Stopwatch.java" />
         <option value="$PROJECT_DIR$/src/StdRandom.java" />
-        <option value="$PROJECT_DIR$/src/Chapter1/ThreeSum.java" />
         <option value="$PROJECT_DIR$/src/Stopwatch.java" />
         <option value="$PROJECT_DIR$/src/Quiz1/QuickSortStrings.java" />
         <option value="$PROJECT_DIR$/src/Quiz1/QuickSortG4G.java" />
@@ -126,19 +126,46 @@
         <option value="$PROJECT_DIR$/src/Quiz1/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem3TakeTwo.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem3notes.java" />
-        <option value="$PROJECT_DIR$/src/Midterm/Problem4.java" />
-        <option value="$PROJECT_DIR$/src/Midterm/Problem3.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem3Tests.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem5.java" />
         <option value="$PROJECT_DIR$/src/Midterm/Problem2.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem4.java" />
+        <option value="$PROJECT_DIR$/src/Midterm/Problem3.java" />
+        <option value="$PROJECT_DIR$/src/NordstromTest.java" />
+        <option value="$PROJECT_DIR$/src/GoogleTest.java" />
+        <option value="$PROJECT_DIR$/src/GooglePractice1.java" />
+        <option value="$PROJECT_DIR$/src/GooglePractice2.java" />
+        <option value="$PROJECT_DIR$/src/Google2.java" />
+        <option value="$PROJECT_DIR$/src/Quiz3/Problem1.java" />
+        <option value="$PROJECT_DIR$/src/Quiz3/Problem2.java" />
+        <option value="$PROJECT_DIR$/src/Google1.java" />
+        <option value="$PROJECT_DIR$/src/Quiz3/Problem3.java" />
+        <option value="$PROJECT_DIR$/src/Final/PriorityQueue.java" />
+        <option value="$PROJECT_DIR$/src/Final/Queue.java" />
+        <option value="$PROJECT_DIR$/src/Final/UnionFind.java" />
+        <option value="$PROJECT_DIR$/src/Chapter1/ThreeSum.java" />
+        <option value="$PROJECT_DIR$/src/Final/Bag.java" />
+        <option value="$PROJECT_DIR$/src/Final/ConnectedComponents.java" />
+        <option value="$PROJECT_DIR$/src/Final/EdgeWeightedGraph.java" />
+        <option value="$PROJECT_DIR$/src/Final/DirectedEdge.java" />
+        <option value="$PROJECT_DIR$/src/Final/EdgeWeightedDigraph.java" />
+        <option value="$PROJECT_DIR$/src/Final/Problem1.java" />
+        <option value="$PROJECT_DIR$/src/Final/IndexMinPriorityQueue.java" />
+        <option value="$PROJECT_DIR$/src/Final/SeparateChainingHashTable.java" />
+        <option value="$PROJECT_DIR$/src/Final/Problem2.java" />
+        <option value="$PROJECT_DIR$/src/Final/AlphabetAPI.java" />
+        <option value="$PROJECT_DIR$/src/Final/Alphabet.java" />
+        <option value="$PROJECT_DIR$/src/Final/Trie.java" />
+        <option value="$PROJECT_DIR$/src/Final/TernarySearchTrie.java" />
+        <option value="$PROJECT_DIR$/src/Final/Problem3.java" />
+        <option value="$PROJECT_DIR$/src/Final/Problem4.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-303" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1094" />
-    <option name="height" value="874" />
+    <option name="y" value="23" />
+    <option name="width" value="887" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -146,8 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,12 +189,14 @@
               <item name="Algo Learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algo Learning" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Midterm" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,7 +204,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1626458180115" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1629651783641" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -195,13 +222,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Problem3Tests">
+  <component name="RunManager" selected="Application.Problem3 (1)">
+    <configuration name="ConnectedComponents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Final.ConnectedComponents" />
+      <module name="Algo Learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Final.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Final.Problem1" />
+      <module name="Algo Learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Final.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Problem2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Midterm.Problem2" />
+      <option name="MAIN_CLASS_NAME" value="Final.Problem2" />
       <module name="Algo Learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Midterm.*" />
+          <option name="PATTERN" value="Final.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -209,12 +262,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Midterm.Problem3" />
+    <configuration name="Problem3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Final.Problem3" />
       <module name="Algo Learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Midterm.*" />
+          <option name="PATTERN" value="Final.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -222,38 +275,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem3Tests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Midterm.Problem3Tests" />
+    <configuration name="Problem4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Final.Problem4" />
       <module name="Algo Learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Midterm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem3notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Midterm.Problem3notes" />
-      <module name="Algo Learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Midterm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Quiz1.QuickSort" />
-      <module name="Algo Learning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Quiz1.*" />
+          <option name="PATTERN" value="Final.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,10 +290,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Problem3Tests" />
+        <item itemvalue="Application.Problem3 (1)" />
+        <item itemvalue="Application.Problem4" />
         <item itemvalue="Application.Problem2" />
-        <item itemvalue="Application.Problem3notes" />
-        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.Problem1" />
+        <item itemvalue="Application.ConnectedComponents" />
       </list>
     </recent_temporary>
   </component>
@@ -284,10 +312,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-303" y="-1057" width="1094" height="874" extended-state="0" />
+    <frame x="0" y="23" width="887" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18631178" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.33853355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -296,15 +324,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19440125" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5279503" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4456522" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5263975" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32919255" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3478261" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.24844721" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -314,6 +342,34 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22315593" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36490682" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5263975" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32919255" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.24844721" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Chapter1/Stopwatch.class" />
@@ -323,16 +379,6 @@
         <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Quiz1/MergeSortBotUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#1103#1899#1" />
           </folding>
         </state>
       </provider>
@@ -398,13 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chapter1/ThreeSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -426,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3Tests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -440,40 +472,6 @@
           <folding>
             <element signature="method#runHelperTests#0;class#Problem3Tests#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="method#deleteMaxFromMinHeap#0;class#Problem3#0" />
-            <element signature="method#deleteMinFromMaxHeap#0;class#Problem3#0" />
-            <element signature="e#6316#6317#0" expanded="true" />
-            <element signature="e#6343#6344#0" expanded="true" />
-            <element signature="e#6522#6523#0" expanded="true" />
-            <element signature="e#6549#6550#0" expanded="true" />
-            <element signature="method#swimUpMinHeap#0;class#Problem3#0" />
-            <element signature="method#swimDownMaxHeap#0;class#Problem3#0" />
-            <element signature="method#swimDownMinHeap#0;class#Problem3#0" />
-            <element signature="method#getParentIdx#0;class#Problem3#0" />
-            <element signature="method#getLeftChildIdx#0;class#Problem3#0" />
-            <element signature="method#getRightChildIdx#0;class#Problem3#0" />
-            <element signature="method#exchange#0;class#Problem3#0" />
-            <element signature="method#doubleSize#0;class#Problem3#0" />
-            <element signature="method#downSize#0;class#Problem3#0" />
-            <element signature="method#resetHeap#0;class#Problem3#0" />
-            <element signature="method#isProperHeap#0;class#Problem3#0" />
-            <element signature="method#printHeap#0;class#Problem3#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
@@ -490,16 +488,319 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Quiz1/MergeSortBotUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="82" selection-start-line="82" selection-end-line="90" selection-end-column="3" />
+          <folding>
+            <element signature="e#1103#1899#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="450" selection-start-line="450" selection-end-line="450" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#check#0;class#RedBlackBST#0;class#Problem4#0" />
+            <element signature="e#12126#12127#0" expanded="true" />
+            <element signature="e#12170#12171#0" expanded="true" />
+            <element signature="method#isBST#1;class#RedBlackBST#0;class#Problem4#0" />
+            <element signature="method#isSizeConsistent#1;class#RedBlackBST#0;class#Problem4#0" />
+            <element signature="method#is23#1;class#RedBlackBST#0;class#Problem4#0" />
+            <element signature="method#isBalanced#1;class#RedBlackBST#0;class#Problem4#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/_4/hdn56v1x5114xyws56z23d1r0000gn/T/com.microsoft.Outlook/Outlook Temp/balance[4].java" />
+    <entry file="file://$PROJECT_DIR$/src/Quiz3/Problem1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Quiz3/Problem2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Quiz3/Problem3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OAGoogle/Google1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OAGoogle/Google2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OAGoogle/GooglePractice1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OAGoogle/GooglePractice2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OANordstrom/NordstromTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1623">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Midterm/Problem3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2565">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="method#deleteMaxFromMinHeap#0;class#Problem3#0" />
+            <element signature="method#swimUpMinHeap#0;class#Problem3#0" />
+            <element signature="method#swimDownMaxHeap#0;class#Problem3#0" />
+            <element signature="method#swimDownMinHeap#0;class#Problem3#0" />
+            <element signature="method#getParentIdx#0;class#Problem3#0" />
+            <element signature="method#getLeftChildIdx#0;class#Problem3#0" />
+            <element signature="method#getRightChildIdx#0;class#Problem3#0" />
+            <element signature="method#exchange#0;class#Problem3#0" />
+            <element signature="method#doubleSize#0;class#Problem3#0" />
+            <element signature="method#downSize#0;class#Problem3#0" />
+            <element signature="method#resetHeap#0;class#Problem3#0" />
+            <element signature="method#isProperHeap#0;class#Problem3#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Midterm/Problem2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2538">
-          <caret line="216" column="54" lean-forward="true" selection-start-line="216" selection-start-column="54" selection-end-line="216" selection-end-column="54" />
+        <state relative-caret-position="-1501">
+          <caret line="73" column="61" lean-forward="true" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#Subarray#0;class#Problem2#0" />
             <element signature="method#compareTo#0;class#Subarray#0;class#Problem2#0" />
             <element signature="method#exchange#0;class#Problem2#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chapter1/ThreeSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/UnionFind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OAAsana/Problem1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OAAsana/Problem2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OAAsana/Problem3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OAAsana/Problem4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/DirectedEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/Problem1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="225" column="8" lean-forward="true" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/ConnectedComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-431">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/EdgeWeightedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <marker date="1629421015382" expanded="true" signature="1976:2051" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/EdgeWeightedDigraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/Bag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/Problem2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="974">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/SeparateChainingHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/AlphabetAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/IndexMinPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/TernarySearchTrie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/Alphabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/Problem3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="90" column="50" lean-forward="true" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-736">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Final/Problem4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="301" column="14" selection-start-line="301" selection-start-column="10" selection-end-line="301" selection-end-column="14" />
         </state>
       </provider>
     </entry>
